@@ -14,9 +14,9 @@ section {
     margin: 0 auto;
     scroll-margin-top: 40px;
 }
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 /* DESPRE */
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 
 .header {
     display: grid;
@@ -74,9 +74,9 @@ h2 span {
 h3 span{
   background-image: linear-gradient(to bottom, transparent 65%, #cce2ff7d 35%);
 }
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 /* ABILITATI */
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 .limbaje-wrapper {
   display: flex;
   justify-content: space-between;
@@ -139,9 +139,9 @@ h3 span{
   text-align: left;
 }
 
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 /* PROIECTE */
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 .proiect {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -322,9 +322,9 @@ h3 span{
 }
 
 
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 /* CONTACT */
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 #contact {
   display: flex;
   flex-direction: column;
@@ -342,9 +342,9 @@ h3 span{
   width: 35px;
 }
 
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 /* NAVBAR */
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 
 nav {
   position: fixed;
@@ -387,16 +387,238 @@ nav {
   }
 }
 
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
-/* media queries */
-/* ✦ . 　⁺ 　 . ✦ . 　⁺ 　 . ✦ */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
+/* MOBILE RESPONSIVE STYLES */
+/* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
 
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav a {
+    font-size: 14px;
+  }
+  
+  body {
+    padding-top: 60px;
+  }
+}
+
+/* Mobile Header/About Section */
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .header p {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .right-header {
+    order: -1;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  section {
+    padding: 15px 15px;
+  }
+}
+
+/* Mobile Skills Section */
+@media (max-width: 768px) {
+  .limbaje-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .limbaje-wrapper::before {
+    display: none;
+  }
+  
+  .left-abth,
+  .right-abth {
+    padding: 0;
+  }
+  
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 200px;
+    gap: 15px;
+  }
+  
+  .left-abth h3,
+  .right-abth h3 {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+/* Mobile Projects Section */
+@media (max-width: 768px) {
+  .proiect {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .project-left {
+    order: 2;
+  }
+  
+  .project-right {
+    order: 1;
+  }
+  
+  .project-right {
+    padding: 8px 0;
+  }
+  
+  .project-right h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .github-button, .render-button {
+    padding: 8px 12px;
+    margin: 10px 5px 0 0;
+    font-size: 14px;
+  }
+  
+  .project-right img {
+    width: 18px;
+  }
+  
+  .features {
+    padding-left: 15px;
+  }
+}
+
+/* Mobile Phone Mockup */
+@media (max-width: 768px) {
+  .phone-mockup {
+    width: 200px;
+    height: 400px;
+    padding: 8px;
+    border-radius: 20px;
+  }
+  
+  .phone-mockup .phone-screen {
+    border-radius: 12px;
+  }
+}
+
+/* Mobile Contact Section */
+@media (max-width: 768px) {
+  .contact-info a {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .contact-info h4 {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Lightbox */
+@media (max-width: 768px) {
+  .lightbox {
+    padding: 10px;
+  }
+  
+  .lightbox img.lightbox-content {
+    max-width: 95%;
+    max-height: 70vh;
+  }
+  
+  .lightbox .lightbox-close {
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+  }
+  
+  .lightbox .lightbox-caption {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 480px) {
+  nav {
+    padding: 8px 10px;
+    gap: 10px;
+  }
+  
+  nav a {
+    font-size: 13px;
+  }
+  
+  body {
+    padding-top: 70px;
+  }
+  
+  section {
+    padding: 10px 10px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  .cards-container {
+    max-width: 180px;
+  }
+  
+  .card img {
+    width: 35px;
+    margin: 8px 15px;
+  }
+  
+  .phone-mockup {
+    width: 180px;
+    height: 360px;
+  }
+  
+  .github-button, .render-button {
+    padding: 6px 8px;
+    font-size: 12px;
+    margin: 8px 3px 0 0;
+  }
+  
+  .project-right img {
+    width: 16px;
+  }
+}
+
+/* Existing media queries preserved */
 @media (min-width: 768px) {
     h4{
         width: 70%;
     }
 }
-@media (max-width: 900px) {
+
+@media (max-width: 900px) and (min-width: 769px) {
   .phone-mockup {
     width: 240px;
     height: 480px;
