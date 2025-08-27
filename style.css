@@ -388,10 +388,8 @@ nav {
 }
 
 /* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
-/* MOBILE RESPONSIVE STYLES */
+/* MOBILE RESPONSIVE*/
 /* ✦ . 　⺀ 　 . ✦ . 　⺀ 　 . ✦ */
-
-/* Mobile Navigation */
 @media (max-width: 768px) {
   nav {
     padding: 10px 15px;
@@ -409,7 +407,6 @@ nav {
   }
 }
 
-/* Mobile Header/About Section */
 @media (max-width: 768px) {
   .header {
     grid-template-columns: 1fr;
@@ -420,6 +417,7 @@ nav {
   .header p {
     width: 100%;
     text-align: left;
+    font-size: 14px;
   }
   
   .right-header {
@@ -430,12 +428,32 @@ nav {
     font-size: 1.8em;
   }
   
+  h2 {
+    font-size: 1.4em;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+  }
+  
+  h4 {
+    font-size: 1.1em;
+  }
+  
+  h5 {
+    font-size: 14px;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
   section {
     padding: 15px 15px;
   }
 }
 
-/* Mobile Skills Section */
 @media (max-width: 768px) {
   .limbaje-wrapper {
     flex-direction: column;
@@ -464,7 +482,6 @@ nav {
   }
 }
 
-/* Mobile Projects Section */
 @media (max-width: 768px) {
   .proiect {
     grid-template-columns: 1fr;
@@ -504,7 +521,6 @@ nav {
   }
 }
 
-/* Mobile Phone Mockup */
 @media (max-width: 768px) {
   .phone-mockup {
     width: 200px;
@@ -518,7 +534,6 @@ nav {
   }
 }
 
-/* Mobile Contact Section */
 @media (max-width: 768px) {
   .contact-info a {
     justify-content: center;
@@ -536,7 +551,6 @@ nav {
   }
 }
 
-/* Mobile Lightbox */
 @media (max-width: 768px) {
   .lightbox {
     padding: 10px;
@@ -559,7 +573,6 @@ nav {
   }
 }
 
-/* Small Mobile Adjustments */
 @media (max-width: 480px) {
   nav {
     padding: 8px 10px;
@@ -583,7 +596,24 @@ nav {
   }
   
   h2 {
-    font-size: 1.3em;
+    font-size: 1.2em;
+  }
+  
+  h3 {
+    font-size: 1.1em;
+  }
+  
+  h4 {
+    font-size: 1em;
+  }
+  
+  h5 {
+    font-size: 13px;
+  }
+  
+  p {
+    font-size: 13px;
+    line-height: 1.4;
   }
   
   .cards-container {
@@ -593,6 +623,10 @@ nav {
   .card img {
     width: 35px;
     margin: 8px 15px;
+  }
+  
+  .card p {
+    font-size: 11px;
   }
   
   .phone-mockup {
@@ -609,9 +643,16 @@ nav {
   .project-right img {
     width: 16px;
   }
+  
+  .project-right p {
+    font-size: 13px;
+  }
+  
+  .project-right ul {
+    font-size: 13px;
+  }
 }
 
-/* Existing media queries preserved */
 @media (min-width: 768px) {
     h4{
         width: 70%;
