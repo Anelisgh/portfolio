@@ -14,14 +14,64 @@ section {
     margin: 0 auto;
     scroll-margin-top: 40px;
 }
+
 /* ✦ .   ✦  . ✦ .   ✦  . ✦ */
 /* DESPRE */
 /* ✦ .   ✦  . ✦ .   ✦  . ✦ */
 
-.header {
-    display: grid;
-    grid-template-columns: 75% 25%;
+.header-compact {
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+.intro-text {
+    text-align: center;
+}
+
+.intro-text h1 {
+    margin-bottom: 10px;
+}
+
+.intro-text h4 {
+    font-size: 16px;
+    color: #555;
+    margin-top: -10px;
+    font-style: italic;
+}
+
+.description-grid {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.highlight {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #2e2e2e;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 500;
+}
+
+.detail-column p {
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #333;
+  font-size: 16px;
+}
+.details-columns {
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.detail-column p,
+.highlight {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 
 h1 span {
     background-image: linear-gradient(to bottom, transparent 65%, #D3DCE8 35%);
@@ -40,11 +90,6 @@ p{
     text-align: justify;
 }
 
-.header p{
-  width: 75%;
-  margin-top: 5px;
-  margin-bottom: 0;
-}
 
 .project-right p {
   margin:0;
@@ -527,10 +572,6 @@ nav a:hover::after {
     font-size: 14px;
   }
   
-  .right-header {
-    order: -1;
-  }
-  
   h1 {
     font-size: 1.8em;
   }
@@ -738,6 +779,22 @@ nav a:hover::after {
     h4{
         width: 70%;
     }
+}
+
+@media (max-width: 768px) {
+  .details-columns {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .detail-column p {
+    text-align: left;
+  }
+
+  .highlight {
+    text-align: left;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 900px) and (min-width: 769px) {
