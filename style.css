@@ -486,6 +486,12 @@ a {
   margin-bottom: 10px;
 }
 
+#contact .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 60px;
+}
+
 .contact-info img {
   width: 35px;
 }
@@ -773,12 +779,6 @@ nav a:hover::after {
   .project-right ul {
     font-size: 13px;
   }
-}
-
-@media (min-width: 768px) {
-    h4{
-        width: 70%;
-    }
 }
 
 @media (max-width: 768px) {

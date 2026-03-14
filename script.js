@@ -75,4 +75,5 @@
 
   initCarousel('kinetocare-project');
   initCarousel('big-data-project');
+  initCarousel('azure-telemetry-project');
 })();
