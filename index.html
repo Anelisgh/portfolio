@@ -24,7 +24,7 @@
     <div class="header-compact">
         <div class="intro-text">
             <h1><span>Anelis Niță-Gheorghiaș</span></h1>
-            <h4>Masterandă | Dezvoltare Web Full-Stack</h4>
+            <h4>Masterandă | Full-Stack Developer</h4>
             <div class="description-grid">
                 <p class="highlight">Sunt absolventă de Cibernetică Economică și masterandă la FMI (UniBuc), specializarea Baze de Date și Tehnologii Software.</p>
                 
@@ -182,46 +182,75 @@
 <section id="proiecte">
     <h2>🧩<span>Proiecte</span></h2>
     <h5>Proiecte pe care le-am construit pentru a explora diverse tehnologii și a-mi dezvolta abilitățile practice</h5>
-
     <div class="proiect proiect-carusel" id="kinetocare-project">
     <div class="project-left">
         <div class="carusel-container">
             <div class="carusel-slide">
-                <video controls>
-                    <source src="media/KinetoCare.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                <video controls preload="metadata" playsinline>
+                    <source src="media/auth.mp4" type="video/mp4">
                 </video>
-                <img src="media/Load_balancing&scalabilitate.png" alt="Load balancing și scalabilitate automată">
-                <img src="media/Circuit_breaker&retry.png" alt="Circuit breaker patterns și retry mechanisms">
-                <img src="media/Health_checks.png" alt="Monitoring și health checks integrate">
+                <video controls preload="metadata" playsinline>
+                    <source src="media/booking.mp4" type="video/mp4">
+                </video>
+                <video controls preload="metadata" playsinline>
+                    <source src="media/terapeut.mp4" type="video/mp4">
+                </video>
+                <video controls preload="metadata" playsinline>
+                    <source src="media/chat.mp4" type="video/mp4">
+                </video>
+                <video controls preload="metadata" playsinline>
+                    <source src="media/admin.mp4" type="video/mp4">
+                </video>
+                <video controls preload="metadata" playsinline>
+                    <source src="media/docker_k8s.mp4" type="video/mp4">
+                </video>
             </div>
-            <button class="carusel-btn prev" aria-label="Imaginea anterioară">&#10094;</button>
-            <button class="carusel-btn next" aria-label="Imaginea următoare">&#10095;</button>
+            <button class="carusel-btn prev" aria-label="Videoclipul anterior">&#10094;</button>
+            <button class="carusel-btn next" aria-label="Videoclipul următor">&#10095;</button>
         </div>
     </div>
+ 
     <div class="project-right">
-        <h3>👩🏻‍⚕️ KinetoCare</h3>
-        <p>Aplicație care facilitează legătura dintre pacienți și kinetoterapeuți pentru managementul sesiunilor de recuperare.</p>
-        <p>Funcționalități:</p>
-        <ul>
-            <li>Înregistrare separată pentru pacienți și terapeuți</li>
-            <li>Calendar integrat pentru programări</li>
-            <li>Tracking progres și diagnostic pentru fiecare pacient</li>
-            <li>Sistem de facturare pentru ședințe</li>
-        </ul>
-        <br>
-        <p>Dezvoltată inițial ca aplicație monolitică MVC, apoi refactorizată într-un ecosistem enterprise de microservicii cu resilience patterns și monitoring.</p>
-        <p>Arhitectură Enterprise (navigare cu săgețile pentru capturi demonstrative):</p>
-        <ul class="kinetocare-list">
-            <li><a href="https://github.com/Anelisgh/kinetocare/tree/main/kinetocare_cloud" target="_blank" rel="noopener noreferrer">Microservicii cu API Gateway și service discovery (Eureka)</a></li>
-            <li class="kinetocare-control active" data-slide="1"><span>Load balancing și scalabilitate automată</span></li>
-            <li class="kinetocare-control" data-slide="2"><span>Circuit breaker patterns și retry mechanisms</span></li>
-            <li class="kinetocare-control" data-slide="3"><span>Monitoring și health checks integrate</span></li>
-        </ul>
-        <p>🛠️ Tehnologii: Spring Boot, Spring Cloud Gateway, Eureka Server, Resilience4j, HTML/CSS, JavaScript, Thymeleaf, MySQL</p>
-        <a href="https://github.com/Anelisgh/kinetocare" target="_blank" rel="noopener noreferrer" alt="Link to the GitHub repository"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
+        <h3>🩺 KinetoCare — Platformă Clinică și Management Pacienți</h3>
+        <p>Platformă pentru digitalizarea clinicilor de kinetoterapie, dezvoltată pornind de la analiza unei aplicații reale din domeniu și a nevoilor identificate împreună cu un kinetoterapeut. Gestionează end-to-end fluxul clinic: de la programări și comunicare în timp real, până la evaluări clinice și monitorizarea vizuală a progresului pacienților.</p>
+ 
+        <div class="carusel-controls">
+            <div class="control-item active" data-slide="0">
+                <span class="control-title">1. Autentificare & Control Acces (RBAC)</span>
+                <p>Register și login prin Keycloak (OAuth2/JWT). Fiecare rol — pacient, terapeut, administrator — primește un dashboard izolat, iar accesul la resurse este autorizat strict prin <code>ROLE_*</code> la nivelul fiecărui microserviciu.</p>
+            </div>
+            <div class="control-item" data-slide="1">
+                <span class="control-title">2. Logica de Booking — Selecție Automată a Serviciului</span>
+                <p>La crearea unei programări, platforma determină automat serviciul necesar: evaluare inițială (fără istoric), serviciul recomandat de terapeut (ședințe disponibile) sau reevaluare forțată (ședințe epuizate) — cu notificare asincronă trimisă terapeutului prin RabbitMQ.</p>
+            </div>
+            <div class="control-item" data-slide="2">
+                <span class="control-title">3. Fișa Clinică & Grafice de Evoluție</span>
+                <p>Terapeutul accesează fișa completă a pacientului: evaluări inițiale, re-evaluări și grafice generate automat din jurnalele de recuperare (nivel durere, oboseală, dificultate exerciții) — pentru suport decizional vizual.</p>
+            </div>
+            <div class="control-item" data-slide="3">
+                <span class="control-title">4. Chat în Timp Real & Notificări</span>
+                <p>Mesagerie bidirecțională pacient-terapeut prin WebSockets/STOMP, cu validarea token-ului JWT la inițierea conexiunii. Sistemul de notificări in-app acoperă programări noi, mesaje necitite și remindere de re-evaluare.</p>
+            </div>
+            <div class="control-item" data-slide="4">
+                <span class="control-title">5. Dashboard Administrativ</span>
+                <p>Gestiunea locațiilor și catalogului de servicii, dezactivarea conturilor cu anularea automată a programărilor viitoare aferente și statistici agregate per locație: programări, venituri, terapeuți activi, rată de anulări.</p>
+            </div>
+            <div class="control-item" data-slide="5">
+                <span class="control-title">6. Infrastructură: Docker & Kubernetes</span>
+                <p>Containerizare completă: multi-stage build pentru frontend (Node.js → Nginx) și imagini bazate pe JRE Alpine pentru serviciile Spring Boot. Orchestrare Kubernetes cu Deployments, PVC pentru persistență, ConfigMap/Secrets, ReadinessProbe/LivenessProbe și Ingress Controller ca punct unic de intrare.</p>
+            </div>
+
+        </div>
+ 
+        <p>🛠️ Tehnologii: Java, Spring Boot, Spring Cloud Gateway, WebFlux, OpenFeign, Keycloak, RabbitMQ, WebSockets/STOMP, React, Vite, MySQL, Docker, Kubernetes</p>
+ 
+        <a href="https://github.com/Anelisgh/kinetocare" target="_blank" rel="noopener noreferrer" aria-label="Deschide repository GitHub">
+            <button class="github-button">
+                <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub"> GitHub
+            </button>
+        </a>
     </div>
-    </div>
+</div>
 
 
 <div class="proiect proiect-carusel" id="azure-telemetry-project">
