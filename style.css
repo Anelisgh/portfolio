@@ -506,6 +506,7 @@ nav {
   background-color: white;
   padding: 15px 30px;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   gap: 30px;
   border-bottom: 1px solid #D3DCE8;
@@ -542,6 +543,50 @@ nav a:hover::after {
 }
 
 /* ✦ .   ✦  . ✦ .   ✦  . ✦ */
+/* LANGUAGE SWITCHER */
+/* ✦ .   ✦  . ✦ .   ✦  . ✦ */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  background-color: #F0F4F8;
+  border-radius: 20px;
+  padding: 2px 4px;
+  border: 1px solid #D3DCE8;
+  margin-left: 5px;
+  user-select: none;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.lang-btn:hover:not(.active) {
+  color: #1a73e8;
+}
+
+.lang-btn.active {
+  background-color: #1a73e8;
+  color: #ffffff;
+  box-shadow: 0 1px 4px rgba(26, 115, 232, 0.3);
+}
+
+.lang-divider {
+  color: #A3BCCB;
+  font-size: 12px;
+  margin: 0 1px;
+}
+
+/* ✦ .   ✦  . ✦ .   ✦  . ✦ */
 /* MOBILE RESPONSIVE*/
 /* ✦ .   ✦  . ✦ .   ✦  . ✦ */
 @media (max-width: 768px) {
@@ -550,6 +595,7 @@ nav a:hover::after {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
   
   nav a {
@@ -705,10 +751,21 @@ nav a:hover::after {
   nav {
     padding: 8px 10px;
     gap: 10px;
+    align-items: center;
   }
   
   nav a {
     font-size: 13px;
+  }
+
+  .lang-switch {
+    margin-left: 0;
+    padding: 2px 3px;
+  }
+
+  .lang-btn {
+    font-size: 11px;
+    padding: 3px 7px;
   }
   
   body {

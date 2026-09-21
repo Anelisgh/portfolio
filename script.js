@@ -1,4 +1,7 @@
 (() => {
+  // ✦ . ✦ . ✦ . ✦ . ✦
+  // CAROUSEL LOGIC
+  // ✦ . ✦ . ✦ . ✦ . ✦
   function initCarousel(containerId) {
     const projectContainer = document.getElementById(containerId);
     
@@ -73,7 +76,88 @@
     updateCarousel(0);
   }
 
+  // ✦ . ✦ . ✦ . ✦ . ✦
+  // LANGUAGE SWITCHER
+  // ✦ . ✦ . ✦ . ✦ . ✦
+  function initLanguageSwitch() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    if (!langButtons.length) return;
+
+    function setLanguage(lang) {
+      if (typeof translations === 'undefined' || !translations[lang]) return;
+
+      // Update toggle buttons active state and aria-pressed
+      langButtons.forEach(btn => {
+        const isActive = btn.dataset.lang === lang;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+
+      // Update document language attribute
+      document.documentElement.lang = lang;
+
+      // Update Page Title
+      if (translations[lang].page_title) {
+        document.title = translations[lang].page_title;
+      }
+
+      // Update Meta Description
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc && translations[lang].meta_description) {
+        metaDesc.setAttribute('content', translations[lang].meta_description);
+      }
+
+      // Update text and HTML content
+      const i18nElements = document.querySelectorAll('[data-i18n]');
+      i18nElements.forEach(el => {
+        const key = el.dataset.i18n;
+        const value = translations[lang][key];
+        if (value !== undefined) {
+          if (value.includes('<') && value.includes('>')) {
+            el.innerHTML = value;
+          } else {
+            el.textContent = value;
+          }
+        }
+      });
+
+      // Update aria-labels
+      const ariaElements = document.querySelectorAll('[data-i18n-aria]');
+      ariaElements.forEach(el => {
+        const key = el.dataset.i18nAria;
+        const value = translations[lang][key];
+        if (value) {
+          el.setAttribute('aria-label', value);
+        }
+      });
+
+      try {
+        localStorage.setItem('portfolio_lang', lang);
+      } catch (e) {
+        console.warn('LocalStorage unavailable:', e);
+      }
+    }
+
+    langButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedLang = btn.dataset.lang;
+        setLanguage(selectedLang);
+      });
+    });
+
+    let savedLang = 'ro';
+    try {
+      savedLang = localStorage.getItem('portfolio_lang') || 'ro';
+    } catch (e) {
+      savedLang = 'ro';
+    }
+
+    setLanguage(savedLang);
+  }
+
+  // Initialize all components
   initCarousel('kinetocare-project');
   initCarousel('big-data-project');
   initCarousel('azure-telemetry-project');
+  initLanguageSwitch();
 })();

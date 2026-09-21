@@ -12,28 +12,33 @@
 <body>
 <header>
     <nav class="navbar">
-        <a href="#despre">Despre</a>
-        <a href="#abilitati">Abilități tehnice</a>
-        <a href="#proiecte">Proiecte</a>
-        <a href="#contact">Contact</a>
-        <a href="media/Anelis-Ramona_Niță-Gheorghiaș_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Deschide CV în tab nou">CV</a>
+        <a href="#despre" data-i18n="nav_about">Despre</a>
+        <a href="#abilitati" data-i18n="nav_skills">Abilități tehnice</a>
+        <a href="#proiecte" data-i18n="nav_projects">Proiecte</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a href="media/Anelis-Ramona_Niță-Gheorghiaș_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Deschide CV în tab nou" data-i18n-aria="nav_cv_aria" data-i18n="nav_cv">CV</a>
+        <div class="lang-switch" role="group" aria-label="Language selector">
+            <button type="button" class="lang-btn active" data-lang="ro" aria-label="Limba Română" aria-pressed="true">RO</button>
+            <span class="lang-divider">/</span>
+            <button type="button" class="lang-btn" data-lang="en" aria-label="English" aria-pressed="false">EN</button>
+        </div>
     </nav>
 </header>
 
 <section id="despre">
     <div class="header-compact">
         <div class="intro-text">
-            <h1><span>Anelis-Ramona Niță-Gheorghiaș</span></h1>
-            <h4>Full-Stack Software Engineer</h4>
+            <h1><span data-i18n="about_name">Anelis-Ramona Niță-Gheorghiaș</span></h1>
+            <h4 data-i18n="about_role">Full-Stack Software Engineer</h4>
             <div class="description-grid">
-                <p class="highlight">Absolventă de master în Baze de Date și Tehnologii Software, cu o licență în Cibernetică Economică.</p>
+                <p class="highlight" data-i18n="about_highlight">Absolventă de master în Baze de Date și Tehnologii Software, cu o licență în Cibernetică Economică.</p>
                 
                 <div class="details-columns">
                     <div class="detail-column">
-                        <p>Abordez dezvoltarea de aplicații end-to-end: de la analiza cerințelor, logica de business și fluxurile utilizatorului, până la arhitectura backend, proiectarea bazei de date și implementarea frontend-ului, cu securitatea (IAM, RBAC, OAuth2) integrată încă din faza de design.</p>
+                        <p data-i18n="about_detail_1">Abordez dezvoltarea de aplicații end-to-end: de la analiza cerințelor, logica de business și fluxurile utilizatorului, până la arhitectura backend, proiectarea bazei de date și implementarea frontend-ului, cu securitatea (IAM, RBAC, OAuth2) integrată încă din faza de design.</p>
                     </div>
                     <div class="detail-column">
-                        <p>Combinația dintre studiile în cibernetică economică și specializarea tehnică îmi oferă o perspectivă mai largă — înțeleg atât arhitectura tehnică din spatele unei aplicații, cât și valoarea de business pe care aceasta trebuie să o livreze.</p>
+                        <p data-i18n="about_detail_2">Combinația dintre studiile în cibernetică economică și specializarea tehnică îmi oferă o perspectivă mai largă — înțeleg atât arhitectura tehnică din spatele unei aplicații, cât și valoarea de business pe care aceasta trebuie să o livreze.</p>
                     </div>
                 </div>
             </div>
@@ -42,11 +47,11 @@
 </section>
 
 <section id="abilitati">
-    <h2>🔧<span>Abilități Tehnice</span></h2>
-    <h5>Tehnologii cu care lucrez în dezvoltarea aplicațiilor, pe care le învăț și le aprofundez continuu:</h5>
+    <h2 data-i18n="skills_title">🔧<span>Abilități Tehnice</span></h2>
+    <h5 data-i18n="skills_subtitle">Tehnologii cu care lucrez în dezvoltarea aplicațiilor, pe care le învăț și le aprofundez continuu:</h5>
     <div class="limbaje-wrapper">
         <div class="left-abth">
-            <h3>🌐<span>Tehnologii Web</span></h3>
+            <h3 data-i18n="skills_cat_web">🌐<span>Tehnologii Web</span></h3>
             <div class="cards-container">
                 <div class="card">
                     <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML">
@@ -58,7 +63,7 @@
                 </div>
             </div>
         
-            <h3>🖥️<span>Limbaje de Programare</span></h3>
+            <h3 data-i18n="skills_cat_languages">🖥️<span>Limbaje de Programare</span></h3>
             <div class="cards-container">
                 <div class="card">
                     <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript">
@@ -78,7 +83,7 @@
                 </div>
             </div>
 
-            <h3>🏗️<span>Framework‑uri & Biblioteci</span></h3>
+            <h3 data-i18n="skills_cat_frameworks">🏗️<span>Framework‑uri & Biblioteci</span></h3>
             <div class="cards-container">
                 <div class="card">
                     <img src="https://img.icons8.com/?size=100&id=123603&format=png&color=000000" alt="React">
@@ -94,7 +99,7 @@
                 </div>
             </div>
             
-            <h3>🎨<span>Design & Prototipare</span></h3>
+            <h3 data-i18n="skills_cat_design">🎨<span>Design & Prototipare</span></h3>
             <div class="cards-container">
                 <div class="card">
                     <img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" alt="Figma">
@@ -106,11 +111,11 @@
                 </div>
             </div>
                         
-</div>
+        </div>
 
         <div class="right-abth">
             
-            <h3>☁️<span>Microservicii & Cloud</span></h3>
+            <h3 data-i18n="skills_cat_cloud">☁️<span>Microservicii & Cloud</span></h3>
             <div class="cards-container">
                 <div class="card">
                     <img src="https://avatars.githubusercontent.com/u/7815877?s=200&v=4" alt="Spring Cloud">
@@ -134,7 +139,7 @@
                 </div>
             </div>
 
-            <h3>🗄️<span>Baze de Date</span></h3>
+            <h3 data-i18n="skills_cat_databases">🗄️<span>Baze de Date</span></h3>
             <div class="cards-container">
                 <div class="card">
                     <img src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000" alt="MySQL">
@@ -146,7 +151,7 @@
                 </div>
             </div>
 
-            <h3>📊<span>Data Science</span></h3>
+            <h3 data-i18n="skills_cat_datascience">📊<span>Data Science</span></h3>
             <div class="cards-container">
                 <div class="card">
                     <img src="https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000" alt="Pandas">
@@ -161,7 +166,7 @@
                     <p>PySpark</p>
                 </div>
             </div>
-            <h3>🫱🏼‍🫲🏾<span>Management & Colaborare</span></h3>
+            <h3 data-i18n="skills_cat_management">🫱🏼‍🫲🏾<span>Management & Colaborare</span></h3>
             <div class="cards-container">
                 <div class="card">
                     <img src="https://img.icons8.com/?size=100&id=oROcPah5ues6&format=png&color=000000" alt="Jira">
@@ -177,8 +182,8 @@
 </section>
 
 <section id="proiecte">
-    <h2>🧩<span>Proiecte</span></h2>
-    <h5>Proiecte pe care le-am construit pentru a explora diverse tehnologii și a-mi dezvolta abilitățile practice</h5>
+    <h2 data-i18n="projects_title">🧩<span>Proiecte</span></h2>
+    <h5 data-i18n="projects_subtitle">Proiecte pe care le-am construit pentru a explora diverse tehnologii și a-mi dezvolta abilitățile practice</h5>
     <div class="proiect proiect-carusel" id="kinetocare-project">
     <div class="project-left">
         <div class="carusel-container">
@@ -202,46 +207,46 @@
                     <source src="media/docker_k8s.mp4" type="video/mp4">
                 </video>
             </div>
-            <button class="carusel-btn prev" aria-label="Videoclipul anterior">&#10094;</button>
-            <button class="carusel-btn next" aria-label="Videoclipul următor">&#10095;</button>
+            <button class="carusel-btn prev" aria-label="Videoclipul anterior" data-i18n-aria="prev_video">&#10094;</button>
+            <button class="carusel-btn next" aria-label="Videoclipul următor" data-i18n-aria="next_video">&#10095;</button>
         </div>
     </div>
  
     <div class="project-right">
-        <h3>🩺 KinetoCare — Platformă distribuită pentru managementul parcursului terapeutic</h3>
-        <p>Platformă pentru digitalizarea clinicilor de kinetoterapie, dezvoltată pornind de la analiza unei aplicații reale din domeniu și a nevoilor identificate împreună cu un kinetoterapeut. Gestionează end-to-end fluxul clinic: de la programări și comunicare în timp real, până la evaluări clinice și monitorizarea vizuală a progresului pacienților.</p>
+        <h3 data-i18n="kineto_title">🩺 KinetoCare — Platformă distribuită pentru managementul parcursului terapeutic</h3>
+        <p data-i18n="kineto_desc">Platformă pentru digitalizarea clinicilor de kinetoterapie, dezvoltată pornind de la analiza unei aplicații reale din domeniu și a nevoilor identificate împreună cu un kinetoterapeut. Gestionează end-to-end fluxul clinic: de la programări și comunicare în timp real, până la evaluări clinice și monitorizarea vizuală a progresului pacienților.</p>
  
         <div class="carusel-controls">
             <div class="control-item active" data-slide="0">
-                <span class="control-title">1. Autentificare & Control Acces (RBAC)</span>
-                <p>Register și login prin Keycloak (OAuth2/JWT). Fiecare rol — pacient, terapeut, administrator — primește un dashboard izolat, iar accesul la resurse este autorizat strict prin <code>ROLE_*</code> la nivelul fiecărui microserviciu.</p>
+                <span class="control-title" data-i18n="kineto_c1_title">1. Autentificare & Control Acces (RBAC)</span>
+                <p data-i18n="kineto_c1_desc">Register și login prin Keycloak (OAuth2/JWT). Fiecare rol — pacient, terapeut, administrator — primește un dashboard izolat, iar accesul la resurse este autorizat strict prin <code>ROLE_*</code> la nivelul fiecărui microserviciu.</p>
             </div>
             <div class="control-item" data-slide="1">
-                <span class="control-title">2. Logica de Booking — Selecție Automată a Serviciului</span>
-                <p>La crearea unei programări, platforma determină automat serviciul necesar: evaluare inițială (fără istoric), serviciul recomandat de terapeut (ședințe disponibile) sau reevaluare forțată (ședințe epuizate) — cu notificare asincronă trimisă terapeutului prin RabbitMQ.</p>
+                <span class="control-title" data-i18n="kineto_c2_title">2. Logica de Booking — Selecție Automată a Serviciului</span>
+                <p data-i18n="kineto_c2_desc">La crearea unei programări, platforma determină automat serviciul necesar: evaluare inițială (fără istoric), serviciul recomandat de terapeut (ședințe disponibile) sau reevaluare forțată (ședințe epuizate) — cu notificare asincronă trimisă terapeutului prin RabbitMQ.</p>
             </div>
             <div class="control-item" data-slide="2">
-                <span class="control-title">3. Fișa Clinică & Grafice de Evoluție</span>
-                <p>Terapeutul accesează fișa completă a pacientului: evaluări inițiale, re-evaluări și grafice generate automat din jurnalele de recuperare (nivel durere, oboseală, dificultate exerciții) — pentru suport decizional vizual.</p>
+                <span class="control-title" data-i18n="kineto_c3_title">3. Fișa Clinică & Grafice de Evoluție</span>
+                <p data-i18n="kineto_c3_desc">Terapeutul accesează fișa completă a pacientului: evaluări inițiale, re-evaluări și grafice generate automat din jurnalele de recuperare (nivel durere, oboseală, dificultate exerciții) — pentru suport decizional vizual.</p>
             </div>
             <div class="control-item" data-slide="3">
-                <span class="control-title">4. Chat în Timp Real & Notificări</span>
-                <p>Mesagerie bidirecțională pacient-terapeut prin WebSockets/STOMP, cu validarea token-ului JWT la inițierea conexiunii. Sistemul de notificări in-app acoperă programări noi, mesaje necitite și remindere de re-evaluare.</p>
+                <span class="control-title" data-i18n="kineto_c4_title">4. Chat în Timp Real & Notificări</span>
+                <p data-i18n="kineto_c4_desc">Mesagerie bidirecțională pacient-terapeut prin WebSockets/STOMP, cu validarea token-ului JWT la inițierea conexiunii. Sistemul de notificări in-app acoperă programări noi, mesaje necitite și remindere de re-evaluare.</p>
             </div>
             <div class="control-item" data-slide="4">
-                <span class="control-title">5. Dashboard Administrativ</span>
-                <p>Gestiunea locațiilor și catalogului de servicii, dezactivarea conturilor cu anularea automată a programărilor viitoare aferente și statistici agregate per locație: programări, venituri, terapeuți activi, rată de anulări.</p>
+                <span class="control-title" data-i18n="kineto_c5_title">5. Dashboard Administrativ</span>
+                <p data-i18n="kineto_c5_desc">Gestiunea locațiilor și catalogului de servicii, dezactivarea conturilor cu anularea automată a programărilor viitoare aferente și statistici agregate per locație: programări, venituri, terapeuți activi, rată de anulări.</p>
             </div>
             <div class="control-item" data-slide="5">
-                <span class="control-title">6. Infrastructură: Docker & Kubernetes</span>
-                <p>Containerizare completă: multi-stage build pentru frontend (Node.js → Nginx) și imagini bazate pe JRE Alpine pentru serviciile Spring Boot. Orchestrare Kubernetes cu Deployments, PVC pentru persistență, ConfigMap/Secrets, ReadinessProbe/LivenessProbe și Ingress Controller ca punct unic de intrare.</p>
+                <span class="control-title" data-i18n="kineto_c6_title">6. Infrastructură: Docker & Kubernetes</span>
+                <p data-i18n="kineto_c6_desc">Containerizare completă: multi-stage build pentru frontend (Node.js → Nginx) și imagini bazate pe JRE Alpine pentru serviciile Spring Boot. Orchestrare Kubernetes cu Deployments, PVC pentru persistență, ConfigMap/Secrets, ReadinessProbe/LivenessProbe și Ingress Controller ca punct unic de intrare.</p>
             </div>
 
         </div>
  
-        <p>🛠️ Tehnologii: Java, Spring Boot, Spring Cloud Gateway, WebFlux, OpenFeign, Keycloak, RabbitMQ, WebSockets/STOMP, React, Vite, MySQL, Docker, Kubernetes</p>
+        <p data-i18n="kineto_tech">🛠️ Tehnologii: Java, Spring Boot, Spring Cloud Gateway, WebFlux, OpenFeign, Keycloak, RabbitMQ, WebSockets/STOMP, React, Vite, MySQL, Docker, Kubernetes</p>
  
-        <a href="https://github.com/Anelisgh/kinetocare" target="_blank" rel="noopener noreferrer" aria-label="Deschide repository GitHub">
+        <a href="https://github.com/Anelisgh/kinetocare" target="_blank" rel="noopener noreferrer" aria-label="Deschide repository GitHub" data-i18n-aria="github_aria">
             <button class="github-button">
                 <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub"> GitHub
             </button>
@@ -260,37 +265,37 @@
                 <img src="media/azure_kql_events.png" alt="Interogare KQL pentru evenimente custom">
                 <img src="media/azure_terminal_deploy.png" alt="Execuție script de deployment">
             </div>
-            <button class="carusel-btn prev" aria-label="Imaginea anterioară">&#10094;</button>
-            <button class="carusel-btn next" aria-label="Imaginea următoare">&#10095;</button>
+            <button class="carusel-btn prev" aria-label="Imaginea anterioară" data-i18n-aria="prev_image">&#10094;</button>
+            <button class="carusel-btn next" aria-label="Imaginea următoare" data-i18n-aria="next_image">&#10095;</button>
         </div>
     </div>
     <div class="project-right">
-        <h3>🔒 Secure Cloud App & Telemetry</h3>
-        <p>Aplicație web dinamică găzduită în Azure App Service, construită progresiv — de la persistență securizată în Azure SQL până la monitorizare end-to-end prin Application Insights.</p>
+        <h3 data-i18n="azure_title">🔒 Secure Cloud App & Telemetry</h3>
+        <p data-i18n="azure_desc">Aplicație web dinamică găzduită în Azure App Service, construită progresiv — de la persistență securizată în Azure SQL până la monitorizare end-to-end prin Application Insights.</p>
         <div class="carusel-controls">
             <div class="control-item active" data-slide="0">
-                <span class="control-title">1. Aplicație Web (Item Logger)</span>
-                <p>Backend Flask conectat la Azure SQL Database pentru operațiuni CRUD, cu persistența datelor demonstrabilă la refresh.</p>
+                <span class="control-title" data-i18n="azure_c1_title">1. Aplicație Web (Item Logger)</span>
+                <p data-i18n="azure_c1_desc">Backend Flask conectat la Azure SQL Database pentru operațiuni CRUD, cu persistența datelor demonstrabilă la refresh.</p>
             </div>
             <div class="control-item" data-slide="1">
-                <span class="control-title">2. Securitate Bază de Date</span>
-                <p>Acces restricționat prin firewall strict — sunt permise exclusiv IP-urile de ieșire ale App Service-ului, cu regula implicită Azure dezactivată.</p>
+                <span class="control-title" data-i18n="azure_c2_title">2. Securitate Bază de Date</span>
+                <p data-i18n="azure_c2_desc">Acces restricționat prin firewall strict — sunt permise exclusiv IP-urile de ieșire ale App Service-ului, cu regula implicită Azure dezactivată.</p>
             </div>
             <div class="control-item" data-slide="2">
-                <span class="control-title">3. Logare Erori & Observabilitate</span>
-                <p>Backend-ul înregistrează erori de validare (texte prea scurte, duplicate) cu coduri HTTP specifice (400, 409), analizate prin KQL în Log Analytics.</p>
+                <span class="control-title" data-i18n="azure_c3_title">3. Logare Erori & Observabilitate</span>
+                <p data-i18n="azure_c3_desc">Backend-ul înregistrează erori de validare (texte prea scurte, duplicate) cu coduri HTTP specifice (400, 409), analizate prin KQL în Log Analytics.</p>
             </div>
             <div class="control-item" data-slide="3">
-                <span class="control-title">4. Telemetrie Frontend</span>
-                <p>Evenimentul <code>AddButtonClicked</code> este trimis din browser via Application Insights JS SDK, monitorizând comportamentul utilizatorului în timp real.</p>
+                <span class="control-title" data-i18n="azure_c4_title">4. Telemetrie Frontend</span>
+                <p data-i18n="azure_c4_desc">Evenimentul <code>AddButtonClicked</code> este trimis din browser via Application Insights JS SDK, monitorizând comportamentul utilizatorului în timp real.</p>
             </div>
             <div class="control-item" data-slide="4">
-                <span class="control-title">5. Infrastructure as Code</span>
-                <p>Infrastructura este provizionată declarativ prin Azure Bicep, iar configurarea dinamică a firewall-ului se face prin scripturi PowerShell.</p>
+                <span class="control-title" data-i18n="azure_c5_title">5. Infrastructure as Code</span>
+                <p data-i18n="azure_c5_desc">Infrastructura este provizionată declarativ prin Azure Bicep, iar configurarea dinamică a firewall-ului se face prin scripturi PowerShell.</p>
             </div>
         </div>
-        <p>🛠️ Tehnologii: Python (Flask), Azure App Service, Azure SQL, Application Insights, KQL, Azure Bicep, PowerShell, Azure CLI</p>
-        <a href="https://github.com/Anelisgh/cloud-computing" target="_blank" rel="noopener noreferrer" alt="Link to the GitHub repository"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
+        <p data-i18n="azure_tech">🛠️ Tehnologii: Python (Flask), Azure App Service, Azure SQL, Application Insights, KQL, Azure Bicep, PowerShell, Azure CLI</p>
+        <a href="https://github.com/Anelisgh/cloud-computing" target="_blank" rel="noopener noreferrer" aria-label="Deschide repository GitHub" data-i18n-aria="github_aria"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
     </div>
     </div>
 
@@ -302,17 +307,17 @@
             </video>
         </div>
         <div class="project-right">
-            <h3>🎥 MovieInfo</h3>
-            <p>Aplicație web pentru gestionarea și evaluarea filmelor. Utilizatorii pot căuta filme prin API, crea liste personalizate, lăsa review-uri cu rating și primi recomandări bazate pe preferințe.
-                <br>Funcționalități:</p>
+            <h3 data-i18n="movie_title">🎥 MovieInfo</h3>
+            <p><span data-i18n="movie_desc_intro">Aplicație web pentru gestionarea și evaluarea filmelor. Utilizatorii pot căuta filme prin API, crea liste personalizate, lăsa review-uri cu rating și primi recomandări bazate pe preferințe.</span>
+                <br><span data-i18n="features_label">Funcționalități:</span></p>
                 <ul>
-                <li>Căutare filme prin API cu posibilitatea de adăugare manuală</li>
-                <li>Sistem de wishlist-uri personalizabile</li>
-                <li>Review-uri publice/private cu rating agregat</li>
-                <li>Recomandări personalizate pe pagina principală</li>
+                <li data-i18n="movie_feat_1">Căutare filme prin API cu posibilitatea de adăugare manuală</li>
+                <li data-i18n="movie_feat_2">Sistem de wishlist-uri personalizabile</li>
+                <li data-i18n="movie_feat_3">Review-uri publice/private cu rating agregat</li>
+                <li data-i18n="movie_feat_4">Recomandări personalizate pe pagina principală</li>
                 </ul>
-            <p>🛠️ Tehnologii: React.js, Spring Boot, SQL</p>
-            <a href="https://github.com/Anelisgh/movieInfo/tree/final_sql" target="_blank" rel="noopener noreferrer" alt="Link to the GitHub repository"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
+            <p data-i18n="movie_tech">🛠️ Tehnologii: React.js, Spring Boot, SQL</p>
+            <a href="https://github.com/Anelisgh/movieInfo/tree/final_sql" target="_blank" rel="noopener noreferrer" aria-label="Deschide repository GitHub" data-i18n-aria="github_aria"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
         </div>
     </div>
 
@@ -324,18 +329,18 @@
             </video>
         </div>
         <div class="project-right">
-            <h3>💼 HRManager</h3>
-            <p>Aplicație pentru managementul angajaților în departamentele de resurse umane. Permite gestionarea datelor personale, evidența concediilor și generarea de rapoarte vizuale pentru analiză.</p>
-                <p>Funcționalități:</p>
+            <h3 data-i18n="hr_title">💼 HRManager</h3>
+            <p data-i18n="hr_desc_intro">Aplicație pentru managementul angajaților în departamentele de resurse umane. Permite gestionarea datelor personale, evidența concediilor și generarea de rapoarte vizuale pentru analiză.</p>
+                <p data-i18n="features_label">Funcționalități:</p>
                 <ul>
-                <li>Autentificare și management sesiuni</li>
-                <li>Operațiuni CRUD pentru datele angajaților</li>
-                <li>Sistem complet de gestionare concedii</li>
-                <li>Dashboard cu grafice pentru analize HR</li>
-                <li>Teme UI personalizabile</li>
+                <li data-i18n="hr_feat_1">Autentificare și management sesiuni</li>
+                <li data-i18n="hr_feat_2">Operațiuni CRUD pentru datele angajaților</li>
+                <li data-i18n="hr_feat_3">Sistem complet de gestionare concedii</li>
+                <li data-i18n="hr_feat_4">Dashboard cu grafice pentru analize HR</li>
+                <li data-i18n="hr_feat_5">Teme UI personalizabile</li>
                 </ul>
-            <p>🛠️ Tehnologii: Python (Flask), HTML/CSS, JavaScript, MySQL</p>
-            <a href="https://github.com/Anelisgh/Licenta" target="_blank" rel="noopener noreferrer" alt="Link to the GitHub repository"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
+            <p data-i18n="hr_tech">🛠️ Tehnologii: Python (Flask), HTML/CSS, JavaScript, MySQL</p>
+            <a href="https://github.com/Anelisgh/Licenta" target="_blank" rel="noopener noreferrer" aria-label="Deschide repository GitHub" data-i18n-aria="github_aria"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
         </div>
     </div>
 
@@ -351,16 +356,16 @@
             </div>
         </div>
         <div class="project-right">
-            <h3>📱 LostPals</h3>
-            <p>Aplicație Android dezvoltată în echipă pentru recuperarea obiectelor și animalelor pierdute. Utilizatorii pot posta anunțuri cu detalii, iar cei care le găsesc pot contacta proprietarii direct prin chat-ul integrat.</p>
-                <p>Funcționalități:</p>
+            <h3 data-i18n="lostpals_title">📱 LostPals</h3>
+            <p data-i18n="lostpals_desc_intro">Aplicație Android dezvoltată în echipă pentru recuperarea obiectelor și animalelor pierdute. Utilizatorii pot posta anunțuri cu detalii, iar cei care le găsesc pot contacta proprietarii direct prin chat-ul integrat.</p>
+                <p data-i18n="features_label">Funcționalități:</p>
                 <ul>
-                <li>Feed cu postări filtrate pe locație</li>
-                <li>Upload imagine și descriere detaliată pentru anunțuri</li>
-                <li>Chat one-to-one pentru coordinarea predării</li>
+                <li data-i18n="lostpals_feat_1">Feed cu postări filtrate pe locație</li>
+                <li data-i18n="lostpals_feat_2">Upload imagine și descriere detaliată pentru anunțuri</li>
+                <li data-i18n="lostpals_feat_3">Chat one-to-one pentru coordinarea predării</li>
                 </ul>
-            <p>🛠️ Tehnologii: Kotlin, Android Views (XML), Room Database</p>
-            <a href="https://github.com/Anelisgh/LostPals" target="_blank" rel="noopener noreferrer" alt="Link to the GitHub repository"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
+            <p data-i18n="lostpals_tech">🛠️ Tehnologii: Kotlin, Android Views (XML), Room Database</p>
+            <a href="https://github.com/Anelisgh/LostPals" target="_blank" rel="noopener noreferrer" aria-label="Deschide repository GitHub" data-i18n-aria="github_aria"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
         </div>
     </div>
     
@@ -374,83 +379,84 @@
                 <img src="media/undersampling.png" alt="Rezultat Undersampling">
                 <img src="media/streaming.png" alt="Rezultat Proces de Streaming">
             </div>
-            <button class="carusel-btn prev" aria-label="Imaginea anterioară">&#10094;</button>
-            <button class="carusel-btn next" aria-label="Imaginea următoare">&#10095;</button>
+            <button class="carusel-btn prev" aria-label="Imaginea anterioară" data-i18n-aria="prev_image">&#10094;</button>
+            <button class="carusel-btn next" aria-label="Imaginea următoare" data-i18n-aria="next_image">&#10095;</button>
         </div>
     </div>
     <div class="project-right">
-        <h3>📊 Analiza Performanței Academice a Studenților</h3>
-        <p>Analiză predictivă a performanței academice pe un dataset de 1000+ studenți, folosind PySpark pentru procesare și modele ML/DL pentru predicții în timp real.</p>
+        <h3 data-i18n="bigdata_title">📊 Analiza Performanței Academice a Studenților</h3>
+        <p data-i18n="bigdata_desc">Analiză predictivă a performanței academice pe un dataset de 1000+ studenți, folosind PySpark pentru procesare și modele ML/DL pentru predicții în timp real.</p>
         <div class="carusel-controls">
             <div class="control-item active" data-slide="0">
-                <span class="control-title">1. Regresia Liniară</span>
-                <p>Predicția scorului la examen pe baza orelor de studiu, somn și a timpului petrecut online.</p>
+                <span class="control-title" data-i18n="bigdata_c1_title">1. Regresia Liniară</span>
+                <p data-i18n="bigdata_c1_desc">Predicția scorului la examen pe baza orelor de studiu, somn și a timpului petrecut online.</p>
             </div>
             <div class="control-item" data-slide="1">
-                <span class="control-title">2. Regresia Logistică</span>
-                <p>Clasificarea binară (promovat/nepromovat) în funcție de orele de studiu și prezența la cursuri.</p>
+                <span class="control-title" data-i18n="bigdata_c2_title">2. Regresia Logistică</span>
+                <p data-i18n="bigdata_c2_desc">Clasificarea binară (promovat/nepromovat) în funcție de orele de studiu și prezența la cursuri.</p>
             </div>
             <div class="control-item" data-slide="2">
-                <span class="control-title">3. Deep Learning & Optimizare</span>
-                <p>Implementarea unei rețele neuronale (MLP) și optimizarea hiperparametrilor cu GridSearchCV.</p>
+                <span class="control-title" data-i18n="bigdata_c3_title">3. Deep Learning & Optimizare</span>
+                <p data-i18n="bigdata_c3_desc">Implementarea unei rețele neuronale (MLP) și optimizarea hiperparametrilor cu GridSearchCV.</p>
             </div>
             <div class="control-item" data-slide="3">
-                <span class="control-title">4. Echilibrarea Datelor (Undersampling)</span>
-                <p>Rezolvarea dezechilibrului dintre clase pentru a îmbunătăți semnificativ detecția studenților nepromovați.</p>
+                <span class="control-title" data-i18n="bigdata_c4_title">4. Echilibrarea Datelor (Undersampling)</span>
+                <p data-i18n="bigdata_c4_desc">Rezolvarea dezechilibrului dintre clase pentru a îmbunătăți semnificativ detecția studenților nepromovați.</p>
             </div>
              <div class="control-item" data-slide="4">
-                <span class="control-title">5. Proces de Streaming</span>
-                <p>Simularea unui pipeline de date în timp real pentru a prezice rezultatele noilor studenți.</p>
+                <span class="control-title" data-i18n="bigdata_c5_title">5. Proces de Streaming</span>
+                <p data-i18n="bigdata_c5_desc">Simularea unui pipeline de date în timp real pentru a prezice rezultatele noilor studenți.</p>
             </div>
         </div>
 
-        <p>🛠️ Tehnologii: PySpark, Pandas, NumPy, Scikit-learn, TensorFlow/Keras</p>
-        <a href="https://github.com/Anelisgh/BigData" target="_blank" rel="noopener noreferrer" alt="Link to the GitHub repository"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
+        <p data-i18n="bigdata_tech">🛠️ Tehnologii: PySpark, Pandas, NumPy, Scikit-learn, TensorFlow/Keras</p>
+        <a href="https://github.com/Anelisgh/BigData" target="_blank" rel="noopener noreferrer" aria-label="Deschide repository GitHub" data-i18n-aria="github_aria"><button class="github-button"><img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">GitHub</button></a>
     </div>
 </div>
 </section>
 
 
 <section id="contact">
-  <h2>📬<span>Contact</span></h2>
-  <h5>București</h5>
+  <h2 data-i18n="contact_title">📬<span>Contact</span></h2>
+  <h5 data-i18n="contact_city">București</h5>
  <div class="contact-wrapper">
   <div class="contact-info">
-    <a href="mailto:anelis.gheorghias94@gmail.com" aria-label="Trimite email">
+    <a href="mailto:anelis.gheorghias94@gmail.com" aria-label="Trimite email" data-i18n-aria="contact_email_aria">
       <img src="https://img.icons8.com/?size=100&id=6BBCqlzE4iKd&format=png&color=000000" alt="Email icon">
       <h4>anelis.gheorghias94@gmail.com</h4>
     </a>
   </div>
  
   <div class="contact-info">
-    <a href="tel:+40745782060" aria-label="Sună">
+    <a href="tel:+40745782060" aria-label="Sună" data-i18n-aria="contact_phone_aria">
       <img src="https://img.icons8.com/?size=100&id=Bau6VEdMrbzV&format=png&color=000000" alt="Telefon icon">
       <h4>+40 745 782 060</h4>
     </a>
   </div>
 
   <div class="contact-info">
-    <a href="media/Anelis-Ramona_Niță-Gheorghiaș_CV.pdf" download aria-label="Descarcă CV">
+    <a href="media/Anelis-Ramona_Niță-Gheorghiaș_CV.pdf" download aria-label="Descarcă CV" data-i18n-aria="contact_cv_aria">
       <img src="https://img.icons8.com/?size=100&id=R9cokz2UAdyo&format=png&color=000000" alt="CV icon">
-      <h4>Descarcă CV-ul</h4>
+      <h4 data-i18n="contact_download_cv">Descarcă CV-ul</h4>
     </a>
   </div>
  
   <div class="contact-info">
-    <a href="https://www.linkedin.com/in/anelis-gheorghias/" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn">
+    <a href="https://www.linkedin.com/in/anelis-gheorghias/" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn" data-i18n-aria="contact_linkedin_aria">
       <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="LinkedIn icon">
       <h4>LinkedIn</h4>
     </a>
   </div>
  
   <div class="contact-info">
-    <a href="https://github.com/Anelisgh" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub">
+    <a href="https://github.com/Anelisgh" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub" data-i18n-aria="contact_github_aria">
       <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub icon">
       <h4>GitHub</h4>
     </a>
   </div>
 </div>
 </section>
+<script src="translations.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
