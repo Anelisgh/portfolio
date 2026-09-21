@@ -6,6 +6,7 @@ const translations = {
 
     // Navbar
     nav_about: "Despre",
+    nav_experience: "Experiență",
     nav_skills: "Abilități tehnice",
     nav_projects: "Proiecte",
     nav_contact: "Contact",
@@ -15,21 +16,55 @@ const translations = {
     // Despre / About
     about_name: "Anelis-Ramona Niță-Gheorghiaș",
     about_role: "Full-Stack Software Engineer",
-    about_highlight: "Absolventă de master în Baze de Date și Tehnologii Software, cu o licență în Cibernetică Economică.",
-    about_detail_1: "Abordez dezvoltarea de aplicații end-to-end: de la analiza cerințelor, logica de business și fluxurile utilizatorului, până la arhitectura backend, proiectarea bazei de date și implementarea frontend-ului, cu securitatea (IAM, RBAC, OAuth2) integrată încă din faza de design.",
+    about_highlight: "Absolventă de master în Baze de Date și Tehnologii Software, cu o licență în Cibernetică Economică — o combinație care îmi oferă atât înțelegerea arhitecturii tehnice, cât și a valorii de business pe care aceasta trebuie să o livreze.",
+    about_detail_1: "Abordez dezvoltarea de aplicații end-to-end: de la analiza cerințelor, logica de business și fluxurile utilizatorului (event storming, user flows, mockups), până la arhitectura backend, proiectarea bazei de date și implementarea frontend-ului, cu securitatea (IAM, RBAC, OAuth2) integrată încă din faza de design.",
     about_detail_2: "Combinația dintre studiile în cibernetică economică și specializarea tehnică îmi oferă o perspectivă mai largă — înțeleg atât arhitectura tehnică din spatele unei aplicații, cât și valoarea de business pe care aceasta trebuie să o livreze.",
+
+    // Experiență Profesională / Experience
+    exp_title: "💼<span>Experiență Profesională</span>",
+    exp_subtitle: "Traseul meu profesional și responsabilitățile asumate în medii de producție și proiecte reale:",
+
+    // STS
+    exp_sts_role: "Software Engineer Intern",
+    exp_sts_company: "Serviciul de Telecomunicații Speciale (STS) — Dep. Cercetare, Proiectare, Dezvoltare",
+    exp_sts_period: "Iul 2026 – Aug 2026",
+    exp_sts_location: "București",
+    exp_sts_badge: "Top 1% (selectat din 600 de candidați) — Programul Oficial de Internship al Guvernului României",
+    exp_sts_bullet_1: "Am activat într-o echipă, contribuind la design-ul interfeței (UI/UX) și identitatea vizuală a aplicației, la dezvoltarea backend-ului, proiectarea bazei de date și implementarea măsurilor de securitate.",
+    exp_sts_bullet_2: "Proiectarea și implementarea de API-uri REST securizate folosind ecosistemul Spring Boot.",
+    exp_sts_bullet_3: "Facilitarea sesiunilor de Event Storming pentru definirea logicii de business și a fluxurilor utilizatorului, urmate de modelarea bazei de date relaționale și aplicarea principiilor de Domain-Driven Design.",
+    exp_sts_bullet_4: "Configurarea și integrarea soluțiilor de Identity and Access Management (Keycloak), aplicând politici stricte de control al accesului bazat pe roluri (RBAC) și gestionarea securizată a sesiunilor (OAuth2, arhitectură BFF).",
+
+    // Freelance
+    exp_free_role: "Web Developer (Freelance)",
+    exp_free_company: "Cabinet Privat de Kinetoterapie Pediatrică",
+    exp_free_period: "Mar 2026 – Iun 2026",
+    exp_free_location: "Remote",
+    exp_free_bullet_1: "Dezvoltarea end-to-end a unei platforme web de prezentare pentru un cabinet privat de kinetoterapie pediatrică.",
+    exp_free_bullet_2: "Proiectarea interfeței UI/UX în Figma și implementarea unui design responsive folosind HTML5, CSS3 și JavaScript, optimizat pentru dispozitive mobile.",
+    exp_free_bullet_3: "Gestionarea integrală a comunicării cu clientul: definirea cerințelor, iterarea designului și integrarea feedback-ului.",
+    exp_free_bullet_4: "Configurarea infrastructurii de deployment și hosting pe Netlify, incluzând setarea domeniului personalizat.",
+
+    // Educație / Education
+    edu_title: "🎓<span>Educație</span>",
+    edu_master_title: "Master – Baze de Date și Tehnologii Software",
+    edu_master_period: "2024 – 2026",
+    edu_master_inst: "Facultatea de Matematică și Informatică, Universitatea din București",
+    edu_licenta_title: "Licență – Cibernetică Economică",
+    edu_licenta_period: "2021 – 2024",
+    edu_licenta_inst: "Facultatea de Administrație și Afaceri, Universitatea din București",
 
     // Abilități Tehnice / Skills
     skills_title: "🔧<span>Abilități Tehnice</span>",
     skills_subtitle: "Tehnologii cu care lucrez în dezvoltarea aplicațiilor, pe care le învăț și le aprofundez continuu:",
-    skills_cat_web: "🌐<span>Tehnologii Web</span>",
-    skills_cat_languages: "🖥️<span>Limbaje de Programare</span>",
-    skills_cat_frameworks: "🏗️<span>Framework‑uri & Biblioteci</span>",
-    skills_cat_design: "🎨<span>Design & Prototipare</span>",
-    skills_cat_cloud: "☁️<span>Microservicii & Cloud</span>",
-    skills_cat_databases: "🗄️<span>Baze de Date</span>",
-    skills_cat_datascience: "📊<span>Data Science</span>",
-    skills_cat_management: "🫱🏼‍🫲🏾<span>Management & Colaborare</span>",
+    skills_cat_web: "<span>Tehnologii Web</span>",
+    skills_cat_languages: "<span>Limbaje de Programare</span>",
+    skills_cat_frameworks: "<span>Framework‑uri & Biblioteci</span>",
+    skills_cat_design: "<span>Design & Prototipare</span>",
+    skills_cat_cloud: "<span>Microservicii & Cloud</span>",
+    skills_cat_databases: "<span>Baze de Date</span>",
+    skills_cat_datascience: "<span>Data Science</span>",
+    skills_cat_management: "<span>Management & Colaborare</span>",
 
     // Proiecte / Projects
     projects_title: "🧩<span>Proiecte</span>",
@@ -118,7 +153,7 @@ const translations = {
 
     // Contact
     contact_title: "📬<span>Contact</span>",
-    contact_city: "București",
+    contact_city: "București · Deschisă pentru oportunități de Software Engineering",
     contact_download_cv: "Descarcă CV-ul",
     contact_email_aria: "Trimite email",
     contact_phone_aria: "Sună",
@@ -134,6 +169,7 @@ const translations = {
 
     // Navbar
     nav_about: "About",
+    nav_experience: "Experience",
     nav_skills: "Technical Skills",
     nav_projects: "Projects",
     nav_contact: "Contact",
@@ -143,21 +179,55 @@ const translations = {
     // Despre / About
     about_name: "Anelis-Ramona Niță-Gheorghiaș",
     about_role: "Full-Stack Software Engineer",
-    about_highlight: "Master's graduate in Databases and Software Technologies, with a Bachelor's degree in Economic Cybernetics.",
-    about_detail_1: "I approach application development end-to-end: from requirements analysis, business logic, and user flows, to backend architecture, database schema design, and frontend implementation, with security (IAM, RBAC, OAuth2) built-in from the design phase.",
+    about_highlight: "Master's graduate in Databases and Software Technologies, with a Bachelor's degree in Economic Cybernetics — a blend that provides me with both technical architecture depth and an understanding of the business value software must deliver.",
+    about_detail_1: "I approach application development end-to-end: from requirements analysis, business logic, and user flows (event storming, user flows, mockups), to backend architecture, database schema design, and frontend implementation, with security (IAM, RBAC, OAuth2) built-in from the design phase.",
     about_detail_2: "The blend of economic cybernetics and technical specialization gives me a broader perspective — understanding both the underlying technical architecture and the tangible business value an application must deliver.",
+
+    // Experiență Profesională / Experience
+    exp_title: "💼<span>Professional Experience</span>",
+    exp_subtitle: "My professional journey and key responsibilities delivered in real-world environments:",
+
+    // STS
+    exp_sts_role: "Software Engineer Intern",
+    exp_sts_company: "Special Telecommunications Service (STS) — Research, Design & Development Dept.",
+    exp_sts_period: "Jul 2026 – Aug 2026",
+    exp_sts_location: "Bucharest, Romania",
+    exp_sts_badge: "Top 1% (selected out of 600 applicants) — Official Romanian Government Internship Program",
+    exp_sts_bullet_1: "Collaborated within an agile team, contributing to UI/UX design and visual identity, backend engineering, database modeling, and security implementation.",
+    exp_sts_bullet_2: "Designed and implemented secure RESTful APIs leveraging the Spring Boot ecosystem.",
+    exp_sts_bullet_3: "Facilitated Event Storming sessions to formalize business logic and user journeys, followed by relational database schema modeling and Domain-Driven Design (DDD) principles.",
+    exp_sts_bullet_4: "Configured and integrated Identity & Access Management (Keycloak), enforcing role-based access control (RBAC) policies and secure session workflows (OAuth2, BFF architecture).",
+
+    // Freelance
+    exp_free_role: "Web Developer (Freelance)",
+    exp_free_company: "Private Pediatric Physical Therapy Clinic",
+    exp_free_period: "Mar 2026 – Jun 2026",
+    exp_free_location: "Remote",
+    exp_free_bullet_1: "Delivered end-to-end web platform development for a private pediatric physical therapy clinic.",
+    exp_free_bullet_2: "Designed the UI/UX in Figma and engineered a fully responsive frontend with HTML5, CSS3, and modern JavaScript, optimized for mobile devices.",
+    exp_free_bullet_3: "Led end-to-end client communication: requirements gathering, iterative UI reviews, and feedback integration.",
+    exp_free_bullet_4: "Configured automated deployment and hosting on Netlify, including custom domain setup and DNS configuration.",
+
+    // Educație / Education
+    edu_title: "🎓<span>Education</span>",
+    edu_master_title: "Master's – Databases and Software Technologies",
+    edu_master_period: "2024 – 2026",
+    edu_master_inst: "Faculty of Mathematics and Computer Science, University of Bucharest",
+    edu_licenta_title: "Bachelor's – Economic Cybernetics",
+    edu_licenta_period: "2021 – 2024",
+    edu_licenta_inst: "Faculty of Administration and Business, University of Bucharest",
 
     // Abilități Tehnice / Skills
     skills_title: "🔧<span>Technical Skills</span>",
     skills_subtitle: "Technologies I work with in application development, which I continuously learn and deepen:",
-    skills_cat_web: "🌐<span>Web Technologies</span>",
-    skills_cat_languages: "🖥️<span>Programming Languages</span>",
-    skills_cat_frameworks: "🏗️<span>Frameworks & Libraries</span>",
-    skills_cat_design: "🎨<span>Design & Prototyping</span>",
-    skills_cat_cloud: "☁️<span>Microservices & Cloud</span>",
-    skills_cat_databases: "🗄️<span>Databases</span>",
-    skills_cat_datascience: "📊<span>Data Science</span>",
-    skills_cat_management: "🫱🏼‍🫲🏾<span>Management & Collaboration</span>",
+    skills_cat_web: "<span>Web Technologies</span>",
+    skills_cat_languages: "<span>Programming Languages</span>",
+    skills_cat_frameworks: "<span>Frameworks & Libraries</span>",
+    skills_cat_design: "<span>Design & Prototyping</span>",
+    skills_cat_cloud: "<span>Microservices & Cloud</span>",
+    skills_cat_databases: "<span>Databases</span>",
+    skills_cat_datascience: "<span>Data Science</span>",
+    skills_cat_management: "<span>Management & Collaboration</span>",
 
     // Proiecte / Projects
     projects_title: "🧩<span>Projects</span>",
@@ -246,7 +316,7 @@ const translations = {
 
     // Contact
     contact_title: "📬<span>Contact</span>",
-    contact_city: "Bucharest, Romania",
+    contact_city: "Bucharest · Open to Software Engineering opportunities",
     contact_download_cv: "Download Resume",
     contact_email_aria: "Send email",
     contact_phone_aria: "Call",

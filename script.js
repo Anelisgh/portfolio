@@ -23,10 +23,17 @@
 
       if (controls.length > 0) {
         controls.forEach((control, i) => {
+          const p = control.querySelector('p');
           if (i === index) {
             control.classList.add('active');
+            if (p) {
+              p.style.maxHeight = p.scrollHeight + 'px';
+            }
           } else {
             control.classList.remove('active');
+            if (p) {
+              p.style.maxHeight = '0px';
+            }
           }
         });
       }
@@ -136,6 +143,14 @@
       } catch (e) {
         console.warn('LocalStorage unavailable:', e);
       }
+
+      // Re-adjust active paragraphs height if text length changed with language
+      requestAnimationFrame(() => {
+        document.querySelectorAll('.control-item.active p').forEach(p => {
+          p.style.maxHeight = p.scrollHeight + 'px';
+        });
+        window.dispatchEvent(new CustomEvent('languageChanged'));
+      });
     }
 
     langButtons.forEach(btn => {
@@ -160,4 +175,11 @@
   initCarousel('big-data-project');
   initCarousel('azure-telemetry-project');
   initLanguageSwitch();
+
+  // Keep accordion heights accurate on window resize
+  window.addEventListener('resize', () => {
+    document.querySelectorAll('.control-item.active p').forEach(p => {
+      p.style.maxHeight = p.scrollHeight + 'px';
+    });
+  });
 })();
